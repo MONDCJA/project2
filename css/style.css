@@ -1,0 +1,258 @@
+@import url(./common.css);
+*{
+  box-sizing: border-box;
+}
+:root {
+  --gray_0: #ffffff;
+  --gray_100: #fafafa;
+  --gray_200: #f2f2f2;
+  --gray_300: #e4e4e4;
+  --gray_400: #d1d1d1;
+  --gray_500: #b6b6b6;
+  --gray_600: #949494;
+  --gray_700: #686868;
+  --gray_800: #353535;
+  --gray_900: #000000;
+}
+
+.inner {
+  width: 100%;
+  height: 100%;
+  padding: 0 40px;
+}
+
+/* ====================================
+============== header ===============    
+==================================== */
+
+.header_inner {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  background: #fff;
+}
+
+.logo img {
+  width: 122px;
+  
+}
+
+.nav {
+  width: 760px;
+  height: 50px;
+  color: #ff4713;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+}
+
+
+.link {
+  width: 254px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--gray_500);
+}
+.link button {
+  padding: 7px 24px;
+  border-radius: 20px;
+  background: #ff4713;
+  font-size: 16px;
+  font-family: "Noto Sans KR", sans-serif;
+  color: white;
+  border: 1px solid transparent;
+}
+/* ====================================
+============== mainvisual ===============    
+==================================== */
+.mainVisual_inner {
+  padding: 0;
+  /* height: 800px; */
+  /* background: var(--gray_600); */
+}
+.mainVisual .mainVisual_inner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* ====================================
+============== product ===============    
+==================================== */
+.product_inner {
+  height: 700px;
+  background: var(--gray_700);
+  padding: 0;
+  display: flex;
+}
+.half {
+  width: 50%;
+  height: 100%;
+}
+.leftImg {
+  background: var(--gray_500);
+}
+.rightImg {
+  background: var(--gray_400);
+}
+
+/* ====================================
+============== brand ===============    
+==================================== */
+.brand_inner {
+  padding: 0;
+}
+.guide {
+  margin: 160px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.guide>img {
+  width: 410px;
+  height: 124px;
+  background: var(--gray_500);
+}
+
+.brandImg {
+  height: 551px;
+  background: var(--gray_600);
+}
+
+.textSlide {
+  height: 105px;
+  display: flex;
+  align-items: center;
+}
+
+.textline {
+  width: 100%;
+  height: 53px;
+  background: var(--gray_500);
+}
+
+/* ====================================
+============== newsEvent ===============    
+==================================== */
+.newsEvent_inner {
+  height: auto;
+  padding: 0;
+  background: var(--gray_500);
+  display: flex;
+}
+
+.leftNE {
+  width: 40%;
+  background: var(--gray_500);
+  display: flex;
+  flex-direction: column;
+}
+
+.rightNE {
+  width: 60%;
+  background: var(--gray_700);
+}
+
+.eBox {
+  height: 224px;
+}
+
+.event1,.event3 {
+  background: var(--gray_700);
+}
+
+.event2 {
+  background: var(--gray_300);
+}
+
+/* ====================================
+============== sns ===============    
+==================================== */
+.snsTitle {
+  margin-top: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.snsId {
+  width: 430px;
+  height: 117px;
+  background: var(--gray_500);
+}
+
+.snsImg {
+  height: 288px;
+  padding: 70px 0;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 130px;
+  box-sizing: content-box;
+}
+
+.snsImg>img {
+  width: 288px;
+  height: 288px;
+  margin: 0 10px;
+  background: var(--gray_500);
+}
+
+/* ====================================
+============== footer ===============    
+==================================== */
+footer {
+  height: auto;
+  background: var(--gray_700);
+}
+
+.footer_inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footerLogo {
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+
+.footerLogo>img {
+  width: 180px;
+  height: 66px;
+  background: var(--gray_300);
+}
+
+.icon {
+  width: 336px;
+  height: 36px;
+  margin-bottom: 40px;
+  background: var(--gray_300);
+}
+
+.privacy {
+  width: 113px;
+  height: 23px;
+  background: var(--gray_300);
+}
+
+.info {
+  width: 923px;
+  height: 52px;
+  background: var(--gray_300);
+  margin-top: 50px;
+  margin-bottom: 40px;
+  box-sizing: border-box;
+}
+
+.copy {
+  width: 294px;
+  height: 26px;
+  background: var(--gray_300);
+  margin-top: 60px;
+  margin-bottom: 65px;
+}
