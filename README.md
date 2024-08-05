@@ -6,5 +6,3 @@ https://github.com/MONDCJA/project2/
 
 내 페이지 주소
 https://MONDCJA.github.io/project2/
-
-esc
