@@ -1,94 +1,90 @@
 @import url(./common.css);
-*{
-  box-sizing: border-box;
-}
-:root {
-  --gray_0: #ffffff;
-  --gray_100: #fafafa;
-  --gray_200: #f2f2f2;
-  --gray_300: #e4e4e4;
-  --gray_400: #d1d1d1;
-  --gray_500: #b6b6b6;
-  --gray_600: #949494;
-  --gray_700: #686868;
-  --gray_800: #353535;
-  --gray_900: #000000;
-}
 
 .inner {
   width: 100%;
   height: 100%;
-  padding: 0 40px;
 }
 
 /* ====================================
 ============== header ===============    
 ==================================== */
-
-.header_inner {
-  height: 100px;
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.gnb_inner {
+  height: 10rem;
+  padding:0 4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-sizing: border-box;
+  position: relative;
   background: #fff;
+  box-sizing: border-box;
 }
 
 .logo img {
-  width: 122px;
-  
+  width: 12.2rem;
 }
 
 .nav {
-  width: 760px;
-  height: 50px;
-  color: #ff4713;
+  width: 76rem;
+  height: 5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: 500;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.nav li a {
+  color: #ff4713;
+}
+.nav li {
+  width: 14rem;
+  height: 5rem;
+  margin: 0 25px;
+  line-height: 5rem;
   letter-spacing: -0.5px;
 }
-
-
-.link {
-  width: 254px;
-  height: 100px;
+.util {
+  width: 25.4rem;
+  height: 10rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--gray_500);
 }
-.link button {
-  padding: 7px 24px;
-  border-radius: 20px;
+.util button {
+  border-radius: 2rem;
   background: #ff4713;
-  font-size: 16px;
-  font-family: "Noto Sans KR", sans-serif;
   color: white;
+  font-size: 1.6rem;
+  font-family: "Noto Sans KR", sans-serif;
+  padding: 0.7rem 2.4rem;
+  margin-right: 16px;
   border: 1px solid transparent;
 }
-/* ====================================
-============== mainvisual ===============    
-==================================== */
-.mainVisual_inner {
-  padding: 0;
-  /* height: 800px; */
-  /* background: var(--gray_600); */
+.util img {
+
+  vertical-align: top;
 }
-.mainVisual .mainVisual_inner img {
+/* ====================================
+============== mainBanner ===============    
+==================================== */
+
+.mainBanner_inner img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 /* ====================================
 ============== product ===============    
 ==================================== */
 .product_inner {
-  height: 700px;
+  height: 70rem;
   background: var(--gray_700);
-  padding: 0;
   display: flex;
 }
 .half {
@@ -105,44 +101,37 @@
 /* ====================================
 ============== brand ===============    
 ==================================== */
-.brand_inner {
-  padding: 0;
-}
 .guide {
-  margin: 160px 0;
+  margin: 16rem 0;
   display: flex;
   justify-content: center;
 }
 
 .guide>img {
-  width: 410px;
-  height: 124px;
+  width: 41rem;
+  height: 12.4rem;
   background: var(--gray_500);
 }
 
 .brandImg {
-  height: 551px;
+  height: 55.1rem;
   background: var(--gray_600);
 }
 
 .textSlide {
-  height: 105px;
+  height: 10.5rem;
   display: flex;
   align-items: center;
 }
 
 .textline {
-  width: 100%;
-  height: 53px;
+  height: 5.3rem;
   background: var(--gray_500);
 }
-
 /* ====================================
 ============== newsEvent ===============    
 ==================================== */
 .newsEvent_inner {
-  height: auto;
-  padding: 0;
   background: var(--gray_500);
   display: flex;
 }
@@ -160,7 +149,7 @@
 }
 
 .eBox {
-  height: 224px;
+  height: 22.4rem;
 }
 
 .event1,.event3 {
@@ -175,29 +164,28 @@
 ============== sns ===============    
 ==================================== */
 .snsTitle {
-  margin-top: 300px;
+  margin-top: 30rem;
   display: flex;
   justify-content: center;
 }
 
 .snsId {
-  width: 430px;
-  height: 117px;
+  width: 43rem;
+  height: 11.7rem;
   background: var(--gray_500);
 }
 
 .snsImg {
-  height: 288px;
-  padding: 70px 0;
+  height: 28.8rem;
+  padding: 7rem 0;
   display: flex;
   justify-content: center;
-  margin-bottom: 130px;
+  margin-bottom: 13rem;
   box-sizing: content-box;
 }
 
 .snsImg>img {
-  width: 288px;
-  height: 288px;
+  width: 28.8rem;
   margin: 0 10px;
   background: var(--gray_500);
 }
@@ -206,7 +194,7 @@
 ============== footer ===============    
 ==================================== */
 footer {
-  height: auto;
+  /* height: auto; */
   background: var(--gray_700);
 }
 
@@ -244,15 +232,13 @@ footer {
   width: 923px;
   height: 52px;
   background: var(--gray_300);
-  margin-top: 50px;
-  margin-bottom: 40px;
-  box-sizing: border-box;
+  margin: 50px 40px 0 0;
+  /* box-sizing: border-box; */
 }
 
 .copy {
   width: 294px;
   height: 26px;
   background: var(--gray_300);
-  margin-top: 60px;
-  margin-bottom: 65px;
+  margin-top: 60px 65px 0 0;
 }
