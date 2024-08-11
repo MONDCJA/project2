@@ -1,66 +1,110 @@
 @import url(./common.css);
 
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: var(--main-back);
+  color: var(--main-Orange);
+  font-family: "Noto Sans KR", sans-serif;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+}
+
 .inner {
   width: 100%;
+
   height: 100%;
+}
+
+.df {
+  display: flex;
 }
 
 /* ====================================
 ============== header ===============    
 ==================================== */
 header {
-  position: fixed;
-  top: 0;
   width: 100%;
-}
-.gnb_inner {
   height: 10rem;
-  padding:0 4rem;
-  display: flex;
+  position: fixed;
+  z-index: 1000;
+  background-color: #fff;
+}
+
+.gnb_inner {
+  width: 100%;
+  padding: 0 8rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  position: relative;
   justify-content: space-between;
   align-items: center;
-  position: relative;
-  background: #fff;
-  box-sizing: border-box;
 }
 
 .logo img {
   width: 12.2rem;
+  vertical-align: middle;
 }
 
-.nav {
-  width: 76rem;
-  height: 5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 1.8rem;
-  font-weight: 500;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.gnb>li {
+  width: 14rem;
+  height: 10rem;
+  line-height: 10rem;
+  margin: 0 25px;
+  cursor: pointer;
 }
-.nav li a {
-  color: #ff4713;
-}
-.nav li {
+.lnb>li {
   width: 14rem;
   height: 5rem;
-  margin: 0 25px;
   line-height: 5rem;
-  letter-spacing: -0.5px;
+  font-weight: 400;
 }
+.lnb {
+  position: absolute;
+  z-index: 900;
+}
+
+.w100::before {
+  position: absolute;
+  height: 40rem;
+  width: 100%;
+  content: '';
+  background: #fff;
+  left: 0;
+  top: 100%;
+}
+
+.w100 {
+  display: none;
+}
+.gnb>li:hover .w100 {
+  display: block;
+}
+
+
+
+/* 유틸 */
 .util {
   width: 25.4rem;
   height: 10rem;
-  display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .util button {
   border-radius: 2rem;
-  background: #ff4713;
+  background: var(--main-Orange);
   color: white;
   font-size: 1.6rem;
   font-family: "Noto Sans KR", sans-serif;
@@ -68,96 +112,188 @@ header {
   margin-right: 16px;
   border: 1px solid transparent;
 }
-.util img {
 
+.util img {
   vertical-align: top;
 }
+
 /* ====================================
 ============== mainBanner ===============    
 ==================================== */
-
 .mainBanner_inner img {
   width: 100%;
 }
+
 /* ====================================
 ============== product ===============    
 ==================================== */
-.product_inner {
-  height: 70rem;
-  background: var(--gray_700);
-  display: flex;
-}
 .half {
   width: 50%;
-  height: 100%;
+  height: 100vh;
 }
-.leftImg {
-  background: var(--gray_500);
-}
-.rightImg {
-  background: var(--gray_400);
+
+.leftIbg {
+  background-image: url(../imgs/leftbg.jpg);
+  background-size: cover;
 }
 
 /* ====================================
 ============== brand ===============    
 ==================================== */
+.brand_inner {
+  border-bottom: 1px solid var(--main-Orange);
+}
+
 .guide {
-  margin: 16rem 0;
-  display: flex;
-  justify-content: center;
+  text-align: center;
 }
 
 .guide>img {
   width: 41rem;
   height: 12.4rem;
-  background: var(--gray_500);
+  margin: 16rem 0;
 }
 
-.brandImg {
-  height: 55.1rem;
-  background: var(--gray_600);
+.brandImg>img {
+  width: 100%;
 }
 
+/* 텍스트 슬라이드 */
 .textSlide {
-  height: 10.5rem;
-  display: flex;
+  height: 5.4rem;
+  margin: 30px 0;
   align-items: center;
 }
 
 .textline {
-  height: 5.3rem;
-  background: var(--gray_500);
+  height: 4.5rem;
+  position: absolute;
+  display: flex;
+  animation: slide 32s linear infinite;
 }
+
+.textline span {
+  display: inline-block;
+  width: 70rem;
+  margin-right: 1rem;
+  color: var(--main-Orange);
+  font-size: 3.6rem;
+}
+
+.textline img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+.textline2 {
+  animation-delay: -16s;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
 /* ====================================
 ============== newsEvent ===============    
 ==================================== */
 .newsEvent_inner {
-  background: var(--gray_500);
-  display: flex;
+  border-top: 1px solid rgba(111, 112, 112, 0.3);
 }
 
 .leftNE {
   width: 40%;
-  background: var(--gray_500);
-  display: flex;
-  flex-direction: column;
+  border-right: 1px solid rgba(111, 112, 112, 0.3);
+  border-bottom: 1px solid rgba(111, 112, 112, 0.3);
+}
+
+.leftText {
+  margin: 4rem 0 0 8rem;
+  font-size: 10rem;
+  font-weight: 700;
 }
 
 .rightNE {
+  flex-direction: column;
   width: 60%;
-  background: var(--gray_700);
+  position: relative;
+}
+
+.box_wrap {
+  width: 100%;
+  height: 33.33%;
+  padding: 6rem;
+  border-bottom: 1px solid rgba(111, 112, 112, 0.3);
+}
+
+.rightNE span {
+  display: block;
+}
+
+.texteBox {
+  flex-direction: column;
+  width: 85%;
 }
 
 .eBox {
-  height: 22.4rem;
+  justify-content: space-between;
 }
 
-.event1,.event3 {
-  background: var(--gray_700);
+.arrow {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.event2 {
-  background: var(--gray_300);
+.box_title {
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  opacity: 0.7;
+}
+
+.box_main {
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin-top: 1rem;
+  margin-bottom: 1.3rem;
+}
+
+.box_date {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  opacity: 0.6;
+}
+
+.rotate_circle {
+  width: 186px;
+  height: 186px;
+  position: absolute;
+  top: 91%;
+  left: -58%;
+  animation: circle 5s linear infinite;
+  transition: 5s linear infinite;
+}
+
+.rotate_arrow {
+  position: absolute;
+  top: 102%;
+  left: -52%;
+}
+
+@keyframes circle {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* ====================================
@@ -165,80 +301,111 @@ header {
 ==================================== */
 .snsTitle {
   margin-top: 30rem;
-  display: flex;
   justify-content: center;
 }
 
-.snsId {
-  width: 43rem;
-  height: 11.7rem;
-  background: var(--gray_500);
-}
-
-.snsImg {
-  height: 28.8rem;
-  padding: 7rem 0;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 13rem;
+.snsId>img {
+  max-width: 100%;
   box-sizing: content-box;
 }
 
+.snsId>p {
+  font-size: 5rem;
+  font-weight: bold;
+  line-height: 11.7rem;
+  margin-left: 1.6rem;
+  letter-spacing: -0.05rem;
+}
+
+.snsImg {
+  padding: 7rem 0;
+  justify-content: center;
+  margin-bottom: 13rem;
+}
+
 .snsImg>img {
-  width: 28.8rem;
-  margin: 0 10px;
-  background: var(--gray_500);
+  width: 20%;
+  margin: 0 1rem;
 }
 
 /* ====================================
 ============== footer ===============    
 ==================================== */
-footer {
-  /* height: auto; */
-  background: var(--gray_700);
-}
-
 .footer_inner {
-  display: flex;
+  background: var(--main-Orange);
+  color: white;
   flex-direction: column;
   align-items: center;
+
 }
 
 .footerLogo {
-  margin-top: 80px;
-  margin-bottom: 40px;
-}
-
-.footerLogo>img {
-  width: 180px;
-  height: 66px;
-  background: var(--gray_300);
+  margin-top: 8rem;
+  margin-bottom: 4rem;
 }
 
 .icon {
-  width: 336px;
-  height: 36px;
-  margin-bottom: 40px;
-  background: var(--gray_300);
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.icon>a {
+  margin: 0 3.6rem;
 }
 
 .privacy {
-  width: 113px;
-  height: 23px;
-  background: var(--gray_300);
+  font-weight: 500;
 }
 
-.info {
-  width: 923px;
-  height: 52px;
-  background: var(--gray_300);
-  margin: 50px 40px 0 0;
-  /* box-sizing: border-box; */
+.footinfo {
+  margin-top: 5rem;
+  margin-bottom: 4rem;
+}
+
+.infoBar {
+  width: 0.1rem;
+  height: 1.3rem;
+  background-color: white;
+  margin-top: 0.2rem;
+  opacity: 0.2;
+}
+
+.footinfo span {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.6rem;
+  margin: 0 1rem;
+  word-break: keep-all;
+  letter-spacing: 0.35px;
+}
+
+.infoad {
+  align-items: center;
+}
+
+.infonum {
+  justify-content: center;
+  align-items: center;
+}
+
+.copy span {
+  font-size: 1.2rem;
+  font-family: var(--font-proxima);
+  line-height: 2.6rem;
+  letter-spacing: 0.05rem;
+  font-weight: 400;
 }
 
 .copy {
-  width: 294px;
-  height: 26px;
-  background: var(--gray_300);
-  margin-top: 60px 65px 0 0;
+  justify-content: center;
+  text-align: center;
+  margin-top: 6rem;
+  margin-bottom: 6.5rem;
+}
+
+@media (max-width: 1650px) {
+  .gnb_inner {
+    padding: 0 4rem;
+  }
 }

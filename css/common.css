@@ -3,17 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;500;700;900&display=swap");
 @import url("https://use.typekit.net/sdt5rqk.css");
 @import url("https://use.typekit.net/nkm3vjq.css");
-*{
-  box-sizing: border-box;
-  text-decoration: none;
-}
-html {
-  font-size: 62.5%;
-}
-body {
-  font-size: 1.6rem;
-  font-family: "Noto Sans KR", sans-serif;
-}
+
 :root {
   --gray_0: #ffffff;
   --gray_100: #fafafa;
@@ -25,8 +15,9 @@ body {
   --gray_700: #686868;
   --gray_800: #353535;
   --gray_900: #000000;
-/* body */
+
   --main-Orange: #ff4713;
+  --main-back: #f7f6f3;
   --font-proxima: "articulat-cf", "Noto Sans KR", sans-serif;
   --font-sanfran: "San Francisco", "Noto Sans KR", sans-serif;
 }

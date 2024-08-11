@@ -1,27 +1,66 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>셀렉토 레이아웃</title>
+  <title>셀렉토</title>
   <link rel="stylesheet" href="./css/style.css">
+  <!-- 파비콘/메타 -->
 </head>
 
 <body>
   <div class="wrap">
     <!-- header -->
     <header>
-      <div class="inner gnb_inner">
-        <h1 class="logo"><a href="#"><img src="./imgs/logo.png" alt="logo"></a></h1>
-        <ul class="nav">
-          <li><a href="#">셀렉토커피</a></li>
-          <li><a href="#">메뉴</a></li>
-          <li><a href="#">매장안내</a></li>
-          <li><a href="#">WHAT'S NEW</a></li>
-        </ul>
-        <div class="util">
+      <div class="inner gnb_inner df">
+        <!-- 로고 -->
+        <h1 class="logo">
+          <a href="#"><img src="./imgs/logo.png" alt="logo"></a>
+        </h1>
+        <nav>
+          <div class="nav_wrap">
+            <ul class="gnb df">
+              <li><a href="#">셀렉토커피</a>
+                <div class="w100">
+                  <ul class="lnb">
+                    <li><a href="#">브랜드 스토리</a></li>
+                    <li><a href="#">HISTORY</a></li>
+                    <li><a href="#">경쟁력</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="#">메뉴</a>
+                <div class="w100">
+                  <ul class="lnb">
+                    <li><a href="#">Signature</a></li>
+                    <li><a href="#">Season</a></li>
+                    <li><a href="#">Coffee</a></li>
+                    <li><a href="#">Beverage</a></li>
+                    <li><a href="#">Deli&Dessert</a></li>
+                    <li><a href="#">MD</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="#">매장안내</a>
+                <div class="w100">
+                  <ul class="lnb">
+                    <li><a href="#">매장찾기</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="#">WHAT'S NEW</a>
+                <div class="w100">
+                  <ul class="lnb">
+                    <li><a href="#">새로운 소식</a></li>
+                    <li><a href="#">보도자료</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="util df">
           <button>창업안내</button>
           <a href="#"><img src="./imgs/naverlink.svg" alt=""></a>
           <a href="#"><img src="./imgs/youtubelink.svg" alt=""></a>
@@ -29,94 +68,174 @@
         </div>
       </div>
     </header>
-
     <main>
       <!-- mainVisual -->
       <section class="mainBanner">
         <div class="inner mainBanner_inner">
           <img src="./imgs/mainvisual.jpg" alt="커피">
-          <img src="./imgs/maindrink.jpg" alt="커피">
-          <img src="./imgs/mainsummer.jpg" alt="커피">
+          <!-- <img src="./imgs/maindrink.jpg" alt="커피"> -->
+          <!-- <img src="./imgs/mainsummer.jpg" alt="커피"> -->
         </div>
       </section>
-
       <!-- product -->
       <section class="product">
-        <div class="inner product_inner">
-          <div class="half leftImg">
-            <div class="leftText"></div>
-          </div>
-          <div class="half rightImg">
-            <div class="rightText"></div>
-          </div>
+        <div class="inner product_inner df">
+          <div class="half leftIbg"></div>
+          <div class="half rightbg"></div>
         </div>
       </section>
-
       <!-- brand -->
       <section class="brand">
         <div class="inner brand_inner">
           <div class="guide">
-            <img src="#" alt="">
+            <img src="./imgs/m-3rd_sec-header.png" alt="브랜드">
           </div>
-
           <div class="brandImg">
-            <img src="#" alt="">
+            <img src="./imgs/new_m-3rd_sec-bg.jpg" alt="상품이미지">
           </div>
-
-          <div class="textSlide">
+          <div class="textSlide df">
             <div class="textline">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
+              <span>
+                <img src="./imgs/m-3rd_sec-marquee.png" alt="">
+                매장에서 직접 구워 맛있는 셀렉토 베이커리
+              </span>
+              <span>
+                <img src="./imgs/m-3rd_sec-marquee.png" alt="">
+                매장에서 직접 구워 맛있는 셀렉토 베이커리
+              </span>
+              <span>
+                <img src="./imgs/m-3rd_sec-marquee.png" alt="">
+                매장에서 직접 구워 맛있는 셀렉토 베이커리
+              </span>
+              <span>
+                <img src="./imgs/m-3rd_sec-marquee.png" alt="">
+                매장에서 직접 구워 맛있는 셀렉토 베이커리
+              </span>
+            </div>
+            <div class="textline textline2">
+              <span>
+                <img src="./imgs/m-3rd_sec-marquee.png" alt="">
+                매장에서 직접 구워 맛있는 셀렉토 베이커리
+              </span>
+              <span>
+                <img src="./imgs/m-3rd_sec-marquee.png" alt="">
+                매장에서 직접 구워 맛있는 셀렉토 베이커리
+              </span>
+              <span>
+                <img src="./imgs/m-3rd_sec-marquee.png" alt="">
+                매장에서 직접 구워 맛있는 셀렉토 베이커리
+              </span>
+              <span>
+                <img src="./imgs/m-3rd_sec-marquee.png" alt="">
+                매장에서 직접 구워 맛있는 셀렉토 베이커리
+              </span>
+            </div>
+          </div>
+        </div>
+      </section><!-- //brand -->
+      <!-- newsEvent -->
+      <section class="newsEvent">
+        <div class="inner newsEvent_inner df">
+          <div class="leftNE df">
+            <div class="leftText">
+              <span>NEWS &<br>EVENTS</span>
+            </div>
+          </div>
+          <div class="rightNE df">
+            <article class="box_wrap">
+              <div class="eBox event1 df">
+                <div class="texteBox df">
+                  <span class="box_title">EVENT</span>
+                  <span class="box_main">[NEW MENU] 여름 과일의 정석</span>
+                  <span class="box_date">2024/06/04 ~ 2024/08/31</span>
+                </div>
+                <div class="arrow">
+                  <img src="./imgs/m-arrow.png" alt="이벤트 바로가기">
+                </div>
+              </div>
+            </article>
+            <article class="box_wrap">
+              <div class="eBox event2 df">
+                <div class="texteBox df">
+                  <span class="box_title">EVENT</span>
+                  <span class="box_main">[NEW MENU] 묵직한 달콤함, 셀렉토 아메리칸 쿠키</span>
+                  <span class="box_date">2023/11/16 ~ 2099/12/31</span>
+                </div>
+                <div class="arrow">
+                  <img src="./imgs/m-arrow.png" alt="이벤트 바로가기">
+                </div>
+              </div>
+            </article>
+            <article class="box_wrap">
+              <div class="eBox event3 df">
+                <div class="texteBox df">
+                  <span class="box_title">EVENT</span>
+                  <span class="box_main">[NEW VIDEO] 내가 셀렉하는 오늘의 커피</span>
+                  <span class="box_date">2023/09/13 ~ 2025/09/13</span>
+                </div>
+                <div class="arrow">
+                  <img src="./imgs/m-arrow.png" alt="이벤트 바로가기">
+                </div>
+              </div>
+            </article>
+            <div class="rotate_circlebox">
+              <img class="rotate_circle" src="./imgs/m-circle-txt.png" alt="">
+              <a href="#" aria-label="더 많은 이벤트 보기">
+                <img class="rotate_arrow" src="./imgs/m-arrow.png" alt="">
+              </a>
             </div>
           </div>
         </div>
       </section>
-
-      <!-- newsEvent -->
-      <section class="newsEvent">
-        <div class="inner newsEvent_inner">
-          <div class="leftNE"></div>
-          <div class="rightNE">
-            <div class="eBox event1"></div>
-            <div class="eBox event2"></div>
-            <div class="eBox event3"></div>
-          </div>
-        </div>
-      </section>
-
       <!-- sns -->
       <section class="sns">
         <div class="inner sns_inner">
-          <div class="snsTitle">
-            <div class="snsId">
-              <img src="#" alt="">
-              <p></p>
+          <div class="snsTitle df">
+            <div class="snsId df">
+              <img src="./imgs/m-6th_sec-header_icon.svg" alt="인스타그램">
+              <p>selecto_coffee</p>
             </div>
           </div>
-
-          <div class="snsBox">
-            <div class="snsImg">
-              <img src="#" alt="">
-              <img src="#" alt="">
-              <img src="#" alt="">
-            </div>
+          <div class="snsImg df">
+            <img src="./imgs/20240619143443_bk8aqk.png" alt="">
+            <img src="./imgs/20240619143430_gv49zc.png" alt="">
+            <img src="./imgs/20240619143416_zsviqk.png" alt="">
           </div>
-
         </div>
-      </section>
+      </section> <!-- //sns -->
     </main>
-
     <!-- footer -->
     <footer>
-      <div class="inner footer_inner">
-        <a class="footerLogo"><img src="#" alt=""></a>
-        <div class="icon"></div>
-        <div class="privacy"></div>
-        <div class="info"></div>
-        <div class="copy"></div>
+      <div class="inner footer_inner df">
+        <a class="footerLogo"><img src="./imgs/logo-white.svg" alt="logo"></a>
+        <div class="icon df">
+          <a href="#"><img src="./imgs/f-link-n.svg" alt="네이버 링크"></a>
+          <a href="#"><img src="./imgs/f-link-y.svg" alt="유튜브 링크"></a>
+          <a href="#"><img src="./imgs/f-link-i.svg" alt="인스타그램 링크"></a>
+        </div>
+        <a href="#">
+          <p class="privacy">개인정보취급방침</p>
+        </a>
+        <div class="footinfo">
+          <div class="infoad df">
+            <span>주소 : 서울시 구로구 구로3동 222-14 에이스하이엔드타워 2차 1402호
+            </span>
+            <div class="infoBar"></div>
+            <span>도로명주소 : 서울시 구로구 디지털로26길 61 에이스하이엔드타워 2차 1402호</span>
+          </div>
+          <div class="infonum df">
+            <span>대표이사 : 황규연</span>
+            <div class="infoBar"></div>
+            <span>사업자등록번호 : 109-81-99153</span>
+            <div class="infoBar"></div>
+            <span>전화 : 1600-5649</span>
+            <div class="infoBar"></div>
+            <span>팩스 : 02-6340-1701</span>
+          </div>
+        </div>
+        <div class="copy df">
+          <span>COPYRIGHT ㈜맥스원이링크 ALL RIGHTS RESERVED.</span>
+        </div>
       </div>
     </footer>
   </div>
