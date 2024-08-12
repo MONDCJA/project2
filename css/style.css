@@ -47,22 +47,29 @@ header {
   padding: 0 8rem;
   font-size: 1.8rem;
   font-weight: 500;
-  position: relative;
   justify-content: space-between;
   align-items: center;
 }
-
 .logo img {
   width: 12.2rem;
   vertical-align: middle;
 }
-
+.gnb {
+  margin-left: 12.9rem;
+  position: relative;
+}
 .gnb>li {
   width: 14rem;
   height: 10rem;
   line-height: 10rem;
-  margin: 0 25px;
+  margin: 0 2.5rem;
   cursor: pointer;
+}
+.lnb {
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.5s;
 }
 .lnb>li {
   width: 14rem;
@@ -70,31 +77,24 @@ header {
   line-height: 5rem;
   font-weight: 400;
 }
-.lnb {
-  position: absolute;
-  z-index: 900;
+.gnb:hover .lnb {
+  height: 35rem;
 }
 
-.w100::before {
+nav::before {
   position: absolute;
-  height: 40rem;
-  width: 100%;
   content: '';
+  width: 100%;
+  height: 0px;
   background: #fff;
   left: 0;
   top: 100%;
+  transition: all 0.5s;
+}
+nav:hover::before {
+  height: 35rem;
 }
 
-.w100 {
-  display: none;
-}
-.gnb>li:hover .w100 {
-  display: block;
-}
-
-
-
-/* 유틸 */
 .util {
   width: 25.4rem;
   height: 10rem;
@@ -116,7 +116,6 @@ header {
 .util img {
   vertical-align: top;
 }
-
 /* ====================================
 ============== mainBanner ===============    
 ==================================== */
@@ -238,6 +237,7 @@ header {
 .texteBox {
   flex-direction: column;
   width: 85%;
+  
 }
 
 .eBox {
@@ -269,18 +269,22 @@ header {
   line-height: 2.4rem;
   opacity: 0.6;
 }
-
+.rotate_circlebox {
+  position: relative;
+}
 .rotate_circle {
-  width: 186px;
-  height: 186px;
+  width: 184px;
+  height: 184px;
   position: absolute;
-  top: 91%;
+  top: -6.5rem;
   left: -58%;
   animation: circle 5s linear infinite;
   transition: 5s linear infinite;
 }
 
-.rotate_arrow {
+.rotate_circlebox a{
+  width: 71px;
+  height: 48px;
   position: absolute;
   top: 102%;
   left: -52%;
